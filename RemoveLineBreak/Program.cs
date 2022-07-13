@@ -16,7 +16,7 @@ static string ReadSlideText(string input)
 {
     string cleaned = input.Replace(" \n", " ").Replace("\n", " ").Replace("\r", "");
 
-    string addNewLines = cleaned.Replace("\a", Environment.NewLine);
+    string addNewLines = cleaned.Replace("\a", Environment.NewLine + "- ");
 
     return addNewLines;
 }
